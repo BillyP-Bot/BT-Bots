@@ -27,6 +27,7 @@ import { lottoCommand } from "./lotto";
 import { nbaCommand } from "./nba";
 import { noblemenCommand } from "./noblemen";
 import { payBucksCommand } from "./pay-bucks";
+import { addVoiceOptionToCommandsList, sayCommand } from "./say";
 import { serfsCommand } from "./serfs";
 import { sheeshCommand } from "./sheesh";
 import { spinCommand } from "./spin";
@@ -66,6 +67,7 @@ export const commands: ISlashCommand[] = [
 	noblemenCommand,
 	payBucksCommand,
 	portfolioCommand,
+	sayCommand,
 	sellStockCommand,
 	serfsCommand,
 	sheeshCommand,
@@ -80,6 +82,7 @@ export const commandsLookup = commands.reduce((acc, command) => {
 }, {} as Record<string, ISlashCommand>);
 
 export {
+	addVoiceOptionToCommandsList,
 	albumCommand,
 	allowanceCommand,
 	amaCommand,
@@ -111,6 +114,7 @@ export {
 	payBucksCommand,
 	portfolioCommand,
 	postFeature,
+	sayCommand,
 	sellStockCommand,
 	sendConnectFourResponseMessage,
 	serfsCommand,

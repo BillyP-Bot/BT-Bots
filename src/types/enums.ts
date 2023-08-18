@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { config } from "@helpers";
+
 export enum Roles {
 	developer = "811639239501414420",
 	mayor = "692755096462950420",
@@ -61,6 +63,7 @@ export enum CommandNames {
 	pay = "pay",
 	portfolio = "portfolio",
 	queue = "queue",
+	say = "say",
 	sellstock = "sellstock",
 	serfs = "serfs",
 	sheesh = "sheesh",
@@ -71,3 +74,8 @@ export enum CommandNames {
 	taxes = "taxes",
 	ticket = "ticket"
 }
+
+export const VoiceURLs = {
+	voices: `https://odqojfjkv5.execute-api.us-east-1.amazonaws.com/api/voices/server/${config.SERVER_ID}`,
+	outputs: "https://odqojfjkv5.execute-api.us-east-1.amazonaws.com/api/outputs"
+};

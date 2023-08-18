@@ -29,10 +29,13 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@discordjs/voice": "^0.16.0",
     "apisauce": "^3.0.0",
     "btbot-types": "^2.4.0",
     "discord.js": "^14.9.0",
     "dotenv": "^16.0.3",
-    "embed-paginator": "^2.0.1"
+    "embed-paginator": "^2.0.1",
+    "ffmpeg-static": "^5.1.0",
+    "libsodium-wrappers": "^0.7.11"
   }
 }
